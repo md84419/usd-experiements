@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# all folders starting with _ are local
+_*/
+
 # Distribution / packaging
 .Python
 build/
@@ -25,8 +28,12 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-_build
-_compiler
+_build/
+_compiler/
+/app
+.DS_Store
+**/.vscode/ipch
+/.vs
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
